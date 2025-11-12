@@ -40,6 +40,8 @@
             nixidy.packages.${system}.default
           ];
         };
+
+        packages.nixidy = nixidy.packages.${system}.default;
       }
     ));
 }
